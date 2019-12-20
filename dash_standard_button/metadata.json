@@ -40,6 +40,13 @@
         "required": false,
         "description": "The children of this component"
       },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
       "n_clicks": {
         "type": {
           "name": "number"

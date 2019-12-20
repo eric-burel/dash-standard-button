@@ -16,6 +16,7 @@ Keyword arguments:
 - children (a list of or a singular dash component, string or number; optional): The children of this component
 - onClick (string; optional): On click callback (must be a string, as Dash components user defined props must be serializable)
 - id (string; optional): The ID used to identify this component in Dash callbacks.
+- className (string; optional)
 - n_clicks (number; default 0): An integer that represents the number of times
 that this element has been clicked on.
 - n_clicks_timestamp (number; default -1): An integer that represents the time (in ms since 1970)
@@ -32,12 +33,12 @@ Those keys have the following types:
   - prop_name (string; optional): Holds which property is loading
   - component_name (string; optional): Holds the name of the component that is loading"""
     @_explicitize_args
-    def __init__(self, children=None, onClick=Component.UNDEFINED, id=Component.UNDEFINED, n_clicks=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, key=Component.UNDEFINED, role=Component.UNDEFINED, loading_state=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'onClick', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'loading_state']
+    def __init__(self, children=None, onClick=Component.UNDEFINED, id=Component.UNDEFINED, className=Component.UNDEFINED, n_clicks=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, key=Component.UNDEFINED, role=Component.UNDEFINED, loading_state=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'onClick', 'id', 'className', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'loading_state']
         self._type = 'StandardButton'
         self._namespace = 'dash_standard_button'
         self._valid_wildcard_attributes =            ['data-']
-        self.available_properties = ['children', 'onClick', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'loading_state']
+        self.available_properties = ['children', 'onClick', 'id', 'className', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'loading_state']
         self.available_wildcard_properties =            ['data-']
 
         _explicit_args = kwargs.pop('_explicit_args')

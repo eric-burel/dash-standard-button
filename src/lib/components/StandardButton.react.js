@@ -71,6 +71,8 @@ StandardButton.propTypes = {
     'children': PropTypes.node,
 
 
+    'className': PropTypes.string,
+
     // @see https://github.com/plotly/dash-html-components/blob/dev/scripts/generate-components.js#L219
     /**
  * An integer that represents the number of times

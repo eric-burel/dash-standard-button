@@ -10,8 +10,8 @@ StandardButton  A button able to trigger a JavaScript function using a string "o
 }
 
 \usage{
-standardButton(children=NULL, onClick=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL,
-key=NULL, role=NULL, loading_state=NULL)
+standardButton(children=NULL, onClick=NULL, id=NULL, className=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL, loading_state=NULL)
 }
 
 \arguments{
@@ -20,6 +20,8 @@ key=NULL, role=NULL, loading_state=NULL)
 \item{onClick}{Character. On click callback (must be a string, as Dash components user defined props must be serializable)}
 
 \item{id}{Character. The ID used to identify this component in Dash callbacks.}
+
+\item{className}{Character. }
 
 \item{n_clicks}{Numeric. An integer that represents the number of times
 that this element has been clicked on.}
