@@ -1,8 +1,10 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-standardButton <- function(children=NULL, id=NULL, onClick=NULL) {
+standardButton <- function(children=NULL, onClick=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL, role=NULL, loading_state=NULL, ...) {
     
-    props <- list(children=children, id=id, onClick=onClick)
+    wildcard_names = names(dash_assert_valid_wildcards(attrib = list('data'), ...))
+
+    props <- list(children=children, onClick=onClick, id=id, n_clicks=n_clicks, n_clicks_timestamp=n_clicks_timestamp, key=key, role=role, loading_state=loading_state, ...)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -10,7 +12,7 @@ standardButton <- function(children=NULL, id=NULL, onClick=NULL) {
         props = props,
         type = 'StandardButton',
         namespace = 'dash_standard_button',
-        propNames = c('children', 'id', 'onClick'),
+        propNames = c('children', 'onClick', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'loading_state', wildcard_names),
         package = 'dashStandardButton'
         )
 

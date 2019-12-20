@@ -15,9 +15,9 @@ app.layout = html.Div([
 ])
 
 
-@app.callback(Output('output', 'children'), [Input('button', 'onClick')])
+@app.callback(Output('output', 'children'), [Input('button', 'n_clicks')])
 def display_output(value):
-    return 'You have entered {}'.format(value)
+    return 'You have clicked {} times'.format(value)
 
 
 if __name__ == '__main__':
