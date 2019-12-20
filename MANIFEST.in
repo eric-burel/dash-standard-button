@@ -1,0 +1,7 @@
+include dash_standard_button/dash_standard_button.min.js
+include dash_standard_button/dash_standard_button.min.js.map
+include dash_standard_button/metadata.json
+include dash_standard_button/package-info.json
+include README.md
+include LICENSE
+include package.json
